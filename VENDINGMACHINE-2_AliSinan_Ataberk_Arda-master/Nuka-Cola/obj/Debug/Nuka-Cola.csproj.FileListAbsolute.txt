@@ -1,0 +1,6 @@
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\bin\Debug\Nuka-Cola.exe.config
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\bin\Debug\Nuka-Cola.exe
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\bin\Debug\Nuka-Cola.pdb
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\obj\Debug\Nuka-Cola.csprojResolveAssemblyReference.cache
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\obj\Debug\Nuka-Cola.exe
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\obj\Debug\Nuka-Cola.pdb
