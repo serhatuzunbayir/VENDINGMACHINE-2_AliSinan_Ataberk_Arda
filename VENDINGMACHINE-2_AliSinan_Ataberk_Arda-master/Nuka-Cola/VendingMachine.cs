@@ -50,6 +50,50 @@ namespace Nuka_Cola
 
         }
 
+        public void SelectionScreen()
+        {
+            Console.WriteLine("--- Add a Coin --- Only 25 - 50 - 100");
+            bool isSelected = true;
+            while (isSelected)
+            {
+                int coin;
+                string cikis;
+                Console.WriteLine("Para atmaniz bekleniyor");
+                coin = Convert.ToInt32(Console.ReadLine());
+                if (coin == 25 || coin == 50 || coin == 100)
+                {
+                    this.addCoin(coin);
+                }
+                else
+                {
+                    Console.WriteLine("Para Gecersiz");
+                }
+                Console.WriteLine("Bakiyeniz: " + this.getTotalCoin());
+ 
+                isSelected = SelectionScreenSub();
+            }
+        }
+
+        public bool SelectionScreenSub()
+        {
+            string cikis;
+            Console.WriteLine("Secim Ekranina Gitmek icin Y - Para Eklemek Icin N ye basiniz");
+            cikis = Console.ReadLine();
+            if (cikis == "y" || cikis == "Y")
+            {
+                return false;
+            }
+            else if (cikis == "n" || cikis == "N")
+            {
+                return true;
+            }
+            else
+            {
+                SelectionScreenSub();
+                return true;
+            }
+        }
+
         public void Selection()
         {
             switch (selection)
