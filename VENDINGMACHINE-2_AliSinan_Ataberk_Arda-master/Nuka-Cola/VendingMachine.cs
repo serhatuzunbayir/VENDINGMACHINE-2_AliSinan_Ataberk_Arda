@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Nuka_Cola
 {
-    class VendingMachine
+   public class VendingMachine
     {
         private int totalCoin;
         private int selection;

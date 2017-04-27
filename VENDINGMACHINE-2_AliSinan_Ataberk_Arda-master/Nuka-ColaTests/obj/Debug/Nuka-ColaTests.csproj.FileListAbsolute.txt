@@ -1,0 +1,8 @@
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests\bin\Debug\Nuka-ColaTests.dll
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests\bin\Debug\Nuka-ColaTests.pdb
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests\bin\Debug\Nuka-Cola.exe
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests\bin\Debug\Nuka-Cola.pdb
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests\obj\Debug\Nuka-ColaTests.csprojResolveAssemblyReference.cache
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests\obj\Debug\Nuka-ColaTests.dll
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests\obj\Debug\Nuka-ColaTests.pdb
