@@ -17,6 +17,13 @@ namespace Nuka_Cola
             Console.WriteLine("------------------------------------------------------");
             Console.WriteLine("---Welcome to Nuka-Cola Corparation Vending Machine---");
             Console.WriteLine("------------------------------------------------------");
+            Console.WriteLine("------------------------------------------------------");
+            Console.WriteLine("1 -> Ice Cold Nuka Cola  (Price:200)");
+            Console.WriteLine("------------------------------------------------------");
+            Console.WriteLine("2 -> Quantum Nuka Cola  (Price:300)");
+            Console.WriteLine("------------------------------------------------------");
+            Console.WriteLine("3 -> Cart Curt Nuka Cola  (Price:50)");
+            Console.WriteLine("------------------------------------------------------");
 
             /*Console.WriteLine("--- Add a Coin --- Only 25 - 50 - 100");
             bool isSelected = true;

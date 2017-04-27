@@ -42,7 +42,7 @@ namespace Nuka_Cola
             selection = Convert.ToInt32(Console.ReadLine());
             if (selection > 3)
             {
-                Console.WriteLine("Hatali secim yaptiniz lutfen seciminizi tekrar yapiniz");
+                Console.WriteLine("Error invalid selection, please select again");
                 this.DisplayDrinkSelectionMenu();
             }
 
@@ -58,7 +58,7 @@ namespace Nuka_Cola
             {
                 int coin;
                 string cikis;
-                Console.WriteLine("Para atmaniz bekleniyor");
+                Console.WriteLine("Put money to the machine..");
                 coin = Convert.ToInt32(Console.ReadLine());
                 if (coin == 25 || coin == 50 || coin == 100)
                 {
@@ -66,9 +66,9 @@ namespace Nuka_Cola
                 }
                 else
                 {
-                    Console.WriteLine("Para Gecersiz");
+                    Console.WriteLine("Error: İnvalid money.");
                 }
-                Console.WriteLine("Bakiyeniz: " + this.getTotalCoin());
+                Console.WriteLine("Balance: " + this.getTotalCoin());
  
                 isSelected = SelectionScreenSub();
             }
@@ -77,7 +77,7 @@ namespace Nuka_Cola
         public bool SelectionScreenSub()
         {
             string cikis;
-            Console.WriteLine("Secim Ekranina Gitmek icin Y - Para Eklemek Icin N ye basiniz");
+            Console.WriteLine("Select cola for enter Y / Add money for enter N.");
             cikis = Console.ReadLine();
             if (cikis == "y" || cikis == "Y")
             {
@@ -99,39 +99,39 @@ namespace Nuka_Cola
             switch (selection)
             {
                 case 1:
-                    Console.WriteLine("Harika bir secim" + icenuka.getName());
+                    Console.WriteLine("Great selection! " + icenuka.getName());
                     if (totalCoin < icenuka.getPrice())
                     {
-                        Console.WriteLine("Az daha para at");
+                        Console.WriteLine("Need to add more money!");
                     }
                     else
                     {
                         totalCoin -= icenuka.getPrice();
-                        Console.WriteLine("Para ustunuz" + totalCoin);
+                        Console.WriteLine("Change: " + totalCoin);
                     }
                     break;
                 case 2:
-                    Console.WriteLine("Harika bir secim" + quantumnuka.getName());
+                    Console.WriteLine("Great selection! " + quantumnuka.getName());
                     if (totalCoin < quantumnuka.getPrice())
                     {
-                        Console.WriteLine("Az daha para at");
+                        Console.WriteLine("Need more money!");
                     }
                     else
                     {
                         totalCoin -= quantumnuka.getPrice();
-                        Console.WriteLine("Para ustunuz" + totalCoin);
+                        Console.WriteLine("Change: " + totalCoin);
                     }
                     break;
                 case 3:
-                    Console.WriteLine("Harika bir secim" + cartcurt.getName());
+                    Console.WriteLine("Great selection! " + cartcurt.getName());
                     if (totalCoin < cartcurt.getPrice())
                     {
-                        Console.WriteLine("Az daha para at");
+                        Console.WriteLine("Need more money!");
                     }
                     else
                     {
                         totalCoin -= cartcurt.getPrice();
-                        Console.WriteLine("Para ustunuz" + totalCoin);
+                        Console.WriteLine("Change: " + totalCoin);
                     }
                     break;
 

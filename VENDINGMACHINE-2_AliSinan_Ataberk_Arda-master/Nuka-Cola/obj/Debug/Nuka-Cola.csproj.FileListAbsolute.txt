@@ -16,3 +16,9 @@ C:\Users\ardaz\Documents\GitHub\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMA
 C:\Users\ardaz\Documents\GitHub\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\obj\Debug\Nuka-Cola.csprojResolveAssemblyReference.cache
 C:\Users\ardaz\Documents\GitHub\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\obj\Debug\Nuka-Cola.exe
 C:\Users\ardaz\Documents\GitHub\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\obj\Debug\Nuka-Cola.pdb
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\bin\Debug\Nuka-Cola.exe.config
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\obj\Debug\Nuka-Cola.exe
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\obj\Debug\Nuka-Cola.pdb
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\bin\Debug\Nuka-Cola.exe
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\bin\Debug\Nuka-Cola.pdb
+C:\Users\atabe\Source\Repos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-Cola\obj\Debug\Nuka-Cola.csprojResolveAssemblyReference.cache
