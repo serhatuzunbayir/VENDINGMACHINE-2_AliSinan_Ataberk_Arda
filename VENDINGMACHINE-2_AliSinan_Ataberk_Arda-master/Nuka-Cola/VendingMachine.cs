@@ -54,43 +54,57 @@ namespace Nuka_Cola
         {
             Console.WriteLine("--- Add a Coin --- Only 25 - 50 - 100");
             bool isSelected = true;
-            while (isSelected)
-            {
-                int coin;
-                string cikis;
-                Console.WriteLine("Put money to the machine..");
-                coin = Convert.ToInt32(Console.ReadLine());
+            int coin;
+            string cikis;
+            void putCoinTheMachine(int money)
+                {
+                if(money == -1)
+                {
+                    Console.WriteLine("Put money to the machine..");
+                coin = Convert.ToInt32(Console.ReadLine());             
+                }
+                else
+                {
+                    coin = money;
+                }
+              
                 if (coin == 25 || coin == 50 || coin == 100)
                 {
                     this.addCoin(coin);
                 }
                 else
                 {
-                    Console.WriteLine("Error: İnvalid money.");
+                    Console.WriteLine("Error: Invalid money.");
                 }
-                Console.WriteLine("Balance: " + this.getTotalCoin());
- 
-                isSelected = SelectionScreenSub();
-            }
-        }
 
-        public bool SelectionScreenSub()
-        {
-            string cikis;
-            Console.WriteLine("Select cola for enter Y / Add money for enter N.");
-            cikis = Console.ReadLine();
+                Console.WriteLine("Balance: " + this.getTotalCoin());
+                Console.WriteLine("Select cola for enter Y or Add money");
+                cikis = Console.ReadLine();
+            }
+
+            putCoinTheMachine(-1);
+            while (isSelected)
+            {  
+                
+ 
+            
             if (cikis == "y" || cikis == "Y")
             {
-                return false;
+                isSelected = false;
             }
-            else if (cikis == "n" || cikis == "N")
+            else if(IsNumeric(cikis))
             {
-                return true;
+                 isSelected = true;
+                 int money = Convert.ToInt32(cikis);
+                 cikis = null;
+                 putCoinTheMachine(money);
             }
             else
             {
-                SelectionScreenSub();
-                return true;
+                Console.WriteLine("You pick the wrong choice");
+                putCoinTheMachine(-1);
+                isSelected = true;
+            }
             }
         }
 
@@ -102,7 +116,7 @@ namespace Nuka_Cola
                     Console.WriteLine("Great selection! " + icenuka.getName());
                     if (totalCoin < icenuka.getPrice())
                     {
-                        Console.WriteLine("Need to add more money!");
+                        Console.WriteLine("But you need more money!");
                     }
                     else
                     {
@@ -114,7 +128,7 @@ namespace Nuka_Cola
                     Console.WriteLine("Great selection! " + quantumnuka.getName());
                     if (totalCoin < quantumnuka.getPrice())
                     {
-                        Console.WriteLine("Need more money!");
+                        Console.WriteLine("But you need more money!");
                     }
                     else
                     {
@@ -126,7 +140,7 @@ namespace Nuka_Cola
                     Console.WriteLine("Great selection! " + cartcurt.getName());
                     if (totalCoin < cartcurt.getPrice())
                     {
-                        Console.WriteLine("Need more money!");
+                        Console.WriteLine("But you need more money!");
                     }
                     else
                     {
@@ -138,11 +152,11 @@ namespace Nuka_Cola
             }
         }
 
-
-        
-
-        
-
+        public static bool IsNumeric(string value)
+        {
+        double oReturn = 0;
+        return double.TryParse(value, out oReturn);
+        }
         
     } //end of VendingMachine class
 }
