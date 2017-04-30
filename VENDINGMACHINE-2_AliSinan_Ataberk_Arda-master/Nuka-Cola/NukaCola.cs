@@ -6,32 +6,39 @@ using System.Threading.Tasks;
 
 namespace Nuka_Cola
 {
+    // Abstract class for cola object
     abstract class NukaCola
     {
         private int price;
         private string name;
 
+
+        // Function for get price
         public int getPrice()
         {
             return price;
         }
 
+        // Function for get name
         public string getName()
         {
             return name;
         }
 
+        // Function for set price
         public void setPrice(int price)
         {
             this.price = price;
         }
 
+        // Function for set name
         public void setName(string name)
         {
             this.name = name;
         }
     }
 
+    // Sub-Class for cola object and sets name and price
     class QuantumNuka : NukaCola
     {
         public QuantumNuka()
@@ -41,6 +48,7 @@ namespace Nuka_Cola
         }
     }
 
+    // Sub-Class for cola object and sets name and price
     class IceNuka : NukaCola
     {
         public IceNuka()
@@ -50,12 +58,13 @@ namespace Nuka_Cola
         }
     }
 
+    // Sub-Class for cola object and sets name and price
     class Cartcurt : NukaCola
     {
         public Cartcurt()
         {
-            this.setName("Ice Nuka Cola");
-            this.setPrice(200);
+            this.setName("Cart Curt Nuka Cola");
+            this.setPrice(50);
         }
     }
 }

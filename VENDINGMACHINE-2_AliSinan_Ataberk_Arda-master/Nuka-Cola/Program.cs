@@ -8,12 +8,13 @@ namespace Nuka_Cola
 {
     class Program
     {
-        
+        // Main
         static void Main(string[] args)
         {
-            
+            // Creates Vending Machine Object
             var nukaVendingMachine = new VendingMachine();
 
+            // Gives info to users at start
             Console.WriteLine("------------------------------------------------------");
             Console.WriteLine("---Welcome to Nuka-Cola Corparation Vending Machine---");
             Console.WriteLine("------------------------------------------------------");
@@ -24,7 +25,9 @@ namespace Nuka_Cola
             Console.WriteLine("");
             Console.WriteLine("------------------------------------------------------");
 
+            // Calls selection screen
             nukaVendingMachine.SelectionScreen();
+            // Calls display drink selection menu
             nukaVendingMachine.DisplayDrinkSelectionMenu();
 
             //Stop

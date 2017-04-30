@@ -8,30 +8,37 @@ using System.Threading.Tasks;
 
 namespace Nuka_Cola
 {
+    // Class that creates vending machine
    public class VendingMachine
     {
+        public Boolean instanceVendingMachine=true;
         private int totalCoin;
         private int selection;
+
+        // Creates cola objects
         NukaCola icenuka = new IceNuka();
         NukaCola quantumnuka = new QuantumNuka();
         NukaCola cartcurt = new Cartcurt();
 
+
+        // Gets balance
         public int getTotalCoin()
         {
             return totalCoin;
         }
 
+        // Adds coin to balance
         public void addCoin(int coin)
         {
             totalCoin += coin;
         }
 
 
+         // Shows what user can select with price
         public void DisplayDrinkSelectionMenu()
         {
             Console.WriteLine("------------------------------------------------------");
             Console.WriteLine("---------         1 -> Ice Cold Nuka Cola  (200)      ---------");
-            Console.WriteLine("------------------------------------------------------");
             Console.WriteLine("------------------------------------------------------");
             Console.WriteLine("---------         2 -> Quantum Nuka Cola  (300)      ---------");
             Console.WriteLine("------------------------------------------------------");
@@ -50,12 +57,13 @@ namespace Nuka_Cola
 
         }
 
+        // Ask user to add money or select a product
         public void SelectionScreen()
         {
             Console.WriteLine("--- Add a Coin --- Only 25 - 50 - 100");
             bool isSelected = true;
             int coin;
-            string cikis;
+            string exit;
             void putCoinTheMachine(int money)
                 {
                 if(money == -1)
@@ -79,7 +87,7 @@ namespace Nuka_Cola
 
                 Console.WriteLine("Balance: " + this.getTotalCoin());
                 Console.WriteLine("Select cola for enter Y or Add money");
-                cikis = Console.ReadLine();
+                exit = Console.ReadLine();
             }
 
             putCoinTheMachine(-1);
@@ -88,15 +96,15 @@ namespace Nuka_Cola
                 
  
             
-            if (cikis == "y" || cikis == "Y")
+            if (exit == "y" || exit == "Y")
             {
                 isSelected = false;
             }
-            else if(IsNumeric(cikis))
+            else if(IsNumeric(exit))
             {
                  isSelected = true;
-                 int money = Convert.ToInt32(cikis);
-                 cikis = null;
+                 int money = Convert.ToInt32(exit);
+                 exit = null;
                  putCoinTheMachine(money);
             }
             else
@@ -108,6 +116,7 @@ namespace Nuka_Cola
             }
         }
 
+        // Shows what users selected and change 
         public void Selection()
         {
             switch (selection)
@@ -117,6 +126,7 @@ namespace Nuka_Cola
                     if (totalCoin < icenuka.getPrice())
                     {
                         Console.WriteLine("But you need more money!");
+                        SelectionScreen();
                     }
                     else
                     {
@@ -129,6 +139,7 @@ namespace Nuka_Cola
                     if (totalCoin < quantumnuka.getPrice())
                     {
                         Console.WriteLine("But you need more money!");
+                        SelectionScreen();
                     }
                     else
                     {
@@ -141,6 +152,7 @@ namespace Nuka_Cola
                     if (totalCoin < cartcurt.getPrice())
                     {
                         Console.WriteLine("But you need more money!");
+                        SelectionScreen();
                     }
                     else
                     {

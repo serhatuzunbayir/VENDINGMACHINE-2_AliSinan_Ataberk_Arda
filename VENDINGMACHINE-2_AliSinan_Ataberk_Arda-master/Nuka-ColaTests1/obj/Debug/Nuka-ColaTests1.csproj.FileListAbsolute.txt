@@ -1,0 +1,15 @@
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Nuka-ColaTests1.dll
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Nuka-ColaTests1.pdb
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Nuka-Cola.exe
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Nuka-Cola.pdb
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Nuka-Cola.exe.config
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\obj\Debug\Nuka-ColaTests1.csprojResolveAssemblyReference.cache
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\obj\Debug\Nuka-ColaTests1.dll
+C:\Users\atabe\Source\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests1\obj\Debug\Nuka-ColaTests1.pdb
