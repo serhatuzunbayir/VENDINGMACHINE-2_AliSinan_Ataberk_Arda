@@ -1,0 +1,10 @@
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Debug\Nuka-ColaTests2.dll
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Debug\Nuka-ColaTests2.pdb
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Debug\Nuka-Cola.exe
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Debug\Nuka-Cola.pdb
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Debug\Nuka-Cola.exe.config
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Debug\tr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\obj\Debug\Nuka-ColaTests2.csprojResolveAssemblyReference.cache
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\obj\Debug\Nuka-ColaTests2.dll
+C:\Users\alisi\Desktop\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\obj\Debug\Nuka-ColaTests2.pdb

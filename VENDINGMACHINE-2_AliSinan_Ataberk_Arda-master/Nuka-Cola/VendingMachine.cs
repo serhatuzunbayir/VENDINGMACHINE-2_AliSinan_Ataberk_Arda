@@ -11,9 +11,8 @@ namespace Nuka_Cola
     // Class that creates vending machine
    public class VendingMachine
     {
-        public Boolean instanceVendingMachine=true;
+        public Boolean instanceVendingMachine = true;
         private int totalCoin;
-        private int selection;
 
         // Creates cola objects
         NukaCola icenuka = new IceNuka();
@@ -25,7 +24,7 @@ namespace Nuka_Cola
         public int getTotalCoin()
         {
             return totalCoin;
-        }
+        } 
 
         // Adds coin to balance
         public void addCoin(int coin)
@@ -37,6 +36,8 @@ namespace Nuka_Cola
          // Shows what user can select with price
         public void DisplayDrinkSelectionMenu()
         {
+            int selection;
+
             Console.WriteLine("------------------------------------------------------");
             Console.WriteLine("---------         1 -> Ice Cold Nuka Cola  (200)      ---------");
             Console.WriteLine("------------------------------------------------------");
@@ -53,13 +54,13 @@ namespace Nuka_Cola
                 this.DisplayDrinkSelectionMenu();
             }
 
-            Selection();
+            Selection(selection);
 
         }
 
         // Ask user to add money or select a product
         public void SelectionScreen()
-        {
+        {   
             Console.WriteLine("--- Add a Coin --- Only 25 - 50 - 100");
             bool isSelected = true;
             int coin;
@@ -91,6 +92,7 @@ namespace Nuka_Cola
             }
 
             putCoinTheMachine(-1);
+
             while (isSelected)
             {  
                 
@@ -117,7 +119,7 @@ namespace Nuka_Cola
         }
 
         // Shows what users selected and change 
-        public void Selection()
+        public void Selection(int selection)
         {
             switch (selection)
             {

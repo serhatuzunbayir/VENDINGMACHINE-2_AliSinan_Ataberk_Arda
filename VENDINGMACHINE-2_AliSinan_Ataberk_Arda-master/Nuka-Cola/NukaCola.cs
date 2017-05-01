@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Nuka_Cola
 {
     // Abstract class for cola object
-    abstract class NukaCola
+    public abstract class NukaCola
     {
         private int price;
         private string name;
@@ -39,7 +39,7 @@ namespace Nuka_Cola
     }
 
     // Sub-Class for cola object and sets name and price
-    class QuantumNuka : NukaCola
+    public class QuantumNuka : NukaCola
     {
         public QuantumNuka()
         {
@@ -49,7 +49,7 @@ namespace Nuka_Cola
     }
 
     // Sub-Class for cola object and sets name and price
-    class IceNuka : NukaCola
+    public class IceNuka : NukaCola
     {
         public IceNuka()
         {
@@ -59,7 +59,7 @@ namespace Nuka_Cola
     }
 
     // Sub-Class for cola object and sets name and price
-    class Cartcurt : NukaCola
+    public class Cartcurt : NukaCola
     {
         public Cartcurt()
         {
