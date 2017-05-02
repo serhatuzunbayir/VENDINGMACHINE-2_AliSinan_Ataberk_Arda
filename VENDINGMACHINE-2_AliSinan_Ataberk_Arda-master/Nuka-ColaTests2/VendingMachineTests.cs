@@ -67,7 +67,5 @@ namespace Nuka_Cola.Tests
             Assert.IsTrue(VendingMachine.IsNumeric("Sinan"));
         }*/
 
-
-
     }
 }

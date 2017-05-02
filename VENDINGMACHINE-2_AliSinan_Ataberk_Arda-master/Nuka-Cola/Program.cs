@@ -14,7 +14,7 @@ namespace Nuka_Cola
             // Creates Vending Machine Object
             var nukaVendingMachine = new VendingMachine();
 
-            // Gives info to users at start
+            // Gives info to user at start
             Console.WriteLine("------------------------------------------------------");
             Console.WriteLine("---Welcome to Nuka-Cola Corparation Vending Machine---");
             Console.WriteLine("------------------------------------------------------");

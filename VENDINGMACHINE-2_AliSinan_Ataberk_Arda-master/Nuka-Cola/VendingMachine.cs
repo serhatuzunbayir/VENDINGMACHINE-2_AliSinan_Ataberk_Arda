@@ -38,13 +38,13 @@ namespace Nuka_Cola
         {
             int selection;
 
-            Console.WriteLine("------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("---------         1 -> Ice Cold Nuka Cola  (200)      ---------");
-            Console.WriteLine("------------------------------------------------------");
-            Console.WriteLine("---------         2 -> Quantum Nuka Cola  (300)      ---------");
-            Console.WriteLine("------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("---------         2 -> Quantum Nuka Cola  (300)      ----------");
+            Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("---------         3 -> Cart Curt Nuka Cola  (50)      ---------");
-            Console.WriteLine("------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine();
             Console.WriteLine("Please select a drink: ");
             selection = Convert.ToInt32(Console.ReadLine());
@@ -66,11 +66,11 @@ namespace Nuka_Cola
             int coin;
             string exit;
             void putCoinTheMachine(int money)
-                {
+            {
                 if(money == -1)
                 {
                     Console.WriteLine("Put money to the machine..");
-                coin = Convert.ToInt32(Console.ReadLine());             
+                    coin = Convert.ToInt32(Console.ReadLine());             
                 }
                 else
                 {
@@ -95,30 +95,27 @@ namespace Nuka_Cola
 
             while (isSelected)
             {  
-                
- 
-            
-            if (exit == "y" || exit == "Y")
-            {
-                isSelected = false;
-            }
-            else if(IsNumeric(exit))
-            {
-                 isSelected = true;
-                 int money = Convert.ToInt32(exit);
-                 exit = null;
-                 putCoinTheMachine(money);
-            }
-            else
-            {
-                Console.WriteLine("You pick the wrong choice");
-                putCoinTheMachine(-1);
-                isSelected = true;
-            }
+                if (exit == "y" || exit == "Y" || exit == null)
+                {
+                    isSelected = false;
+                }
+                else if(IsNumeric(exit))
+                {
+                    isSelected = true;
+                    int money = Convert.ToInt32(exit);
+                    exit = null;
+                    putCoinTheMachine(money);
+                }
+                else
+                {
+                    Console.WriteLine("You pick the wrong choice");
+                    putCoinTheMachine(-1);
+                    isSelected = true;
+                }
             }
         }
 
-        // Shows what users selected and change 
+        // Shows what user selected and change 
         public void Selection(int selection)
         {
             switch (selection)
@@ -168,8 +165,8 @@ namespace Nuka_Cola
 
         public static bool IsNumeric(string value)
         {
-        double oReturn = 0;
-        return double.TryParse(value, out oReturn);
+            double oReturn = 0;
+            return double.TryParse(value, out oReturn);
         }
         
     } //end of VendingMachine class
