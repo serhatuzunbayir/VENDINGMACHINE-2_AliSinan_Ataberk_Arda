@@ -20,20 +20,20 @@ namespace Nuka_Cola
         NukaCola cartcurt = new Cartcurt();
 
 
-        // Gets balance
+        // Get balance
         public int getTotalCoin()
         {
             return totalCoin;
         } 
 
-        // Adds coin to balance
+        // Add coin to balance
         public void addCoin(int coin)
         {
             totalCoin += coin;
         }
 
 
-         // Shows what user can select with price
+         // Show what user can select with price
         public void DisplayDrinkSelectionMenu()
         {
             int selection;
@@ -56,6 +56,37 @@ namespace Nuka_Cola
 
             Selection(selection);
 
+        }
+
+
+        //Check for discount coupon and make discount before charge
+        public float Discount(float actualPrice)
+        {
+            float newPrice = 0;
+            Console.WriteLine("Do you have >>Summer Sale<< discount coupon? Y/N ");
+            var readLine = Console.ReadLine();
+            if (readLine != null)
+            {
+                var yesOrNo = readLine.ToString();
+
+                if (yesOrNo == "y" || yesOrNo == "yes")
+                {
+                    newPrice = CalculateDiscount(actualPrice);
+                }
+                else
+                {
+                    newPrice = actualPrice;
+                }
+            }
+
+            return newPrice;
+        }
+
+        //helper function to calculate discount
+        public float CalculateDiscount(float colaPrice)
+        {
+            colaPrice = colaPrice * 0.75f; // %25 discount
+            return colaPrice;
         }
 
         // Ask user to add money or select a product
@@ -87,7 +118,7 @@ namespace Nuka_Cola
                 }
 
                 Console.WriteLine("Balance: " + this.getTotalCoin());
-                Console.WriteLine("Select cola for enter Y or Add money");
+                Console.WriteLine("To select a Nuka Cola enter Y or Add money");
                 exit = Console.ReadLine();
             }
 
@@ -118,9 +149,11 @@ namespace Nuka_Cola
         // Shows what user selected and change 
         public void Selection(int selection)
         {
+            
             switch (selection)
             {
                 case 1:
+                    icenuka.setPrice((int)Discount(icenuka.getPrice())); //Ask for discount coupon and make discount
                     Console.WriteLine("Great selection! " + icenuka.getName());
                     if (totalCoin < icenuka.getPrice())
                     {
@@ -134,6 +167,7 @@ namespace Nuka_Cola
                     }
                     break;
                 case 2:
+                    quantumnuka.setPrice((int)Discount(quantumnuka.getPrice()));  //Ask for discount coupon and make discount
                     Console.WriteLine("Great selection! " + quantumnuka.getName());
                     if (totalCoin < quantumnuka.getPrice())
                     {
@@ -147,6 +181,7 @@ namespace Nuka_Cola
                     }
                     break;
                 case 3:
+                    cartcurt.setPrice((int)Discount(cartcurt.getPrice()));  //Ask for discount coupon and make discount
                     Console.WriteLine("Great selection! " + cartcurt.getName());
                     if (totalCoin < cartcurt.getPrice())
                     {

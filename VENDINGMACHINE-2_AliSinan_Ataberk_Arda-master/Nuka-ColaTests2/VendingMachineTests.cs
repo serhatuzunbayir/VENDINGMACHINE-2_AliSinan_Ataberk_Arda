@@ -55,6 +55,39 @@ namespace Nuka_Cola.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        //Test for discount 
+        [TestMethod()]
+        public void MakeDiscountToIceNukaCola()
+        {
+            VendingMachine a = new VendingMachine();
+            NukaCola iceNukaCola = new IceNuka();
+            int expected = 150;
+            int actual = (int)a.CalculateDiscount(iceNukaCola.getPrice()); //%25 discount to 200
+            Assert.AreEqual(expected, actual);
+        }
+
+        //Test for discount 
+        [TestMethod()]
+        public void MakeDiscountToQuantumNukaCola()
+        {
+            VendingMachine a = new VendingMachine();
+            NukaCola quantumNukaCola = new QuantumNuka(); 
+            int expected = 225; 
+            int actual = (int)a.CalculateDiscount(quantumNukaCola.getPrice()); //%25 discount to 300
+            Assert.AreEqual(expected, actual);
+        }
+
+        //Test for discount 
+        [TestMethod()]
+        public void MakeDiscountToCartCurtNukaCola()
+        {
+            VendingMachine a = new VendingMachine();
+            NukaCola cartCurtNukaCola = new Cartcurt();
+            int expected = 37;
+            int actual = (int)a.CalculateDiscount(cartCurtNukaCola.getPrice()); //%25 discount to 50
+            Assert.AreEqual(expected, actual);
+        }
+
         /*[TestMethod()]
         public void IsNumericTest()
         {
