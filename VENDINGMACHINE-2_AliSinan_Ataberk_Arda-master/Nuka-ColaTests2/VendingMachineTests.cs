@@ -58,6 +58,15 @@ namespace Nuka_Cola.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        //Test for CalculateDiscount function
+        [TestMethod()]
+        public void CalculateDiscount()
+        {
+            VendingMachine a = new VendingMachine();
+            int expected = 75;
+            Assert.AreEqual(expected, a.CalculateDiscount(100));
+        }
+
         //Test for discount 
         [TestMethod()]
         public void MakeDiscountToIceNukaCola()
@@ -91,16 +100,36 @@ namespace Nuka_Cola.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        //Test for IsNumeric function
         [TestMethod()]
         public void IsNumericTest()
         {
             Assert.IsTrue(VendingMachine.IsNumeric("44"));
         }
 
+        //Test for IsNumeric function
         [TestMethod()]
         public void IsNumericTest2()
         {
-            Assert.IsFalse(VendingMachine.IsNumeric("Sinan"));
+            Assert.IsFalse(VendingMachine.IsNumeric("Coban"));
+        }
+
+        [TestMethod()]
+        public void GiveIcedNukaTest()
+        {
+            VendingMachine a = new VendingMachine();
+            String expected = "";
+            Assert.AreEqual(expected, a.GiveIcedNuka(false));
+
+        }
+
+        [TestMethod()]
+        public void GiveIcedNukaTest2()
+        {
+            VendingMachine a = new VendingMachine();
+            String expected = "Your brain will freeze...";
+            Assert.AreEqual(expected, a.GiveIcedNuka(true));
+
         }
 
     }

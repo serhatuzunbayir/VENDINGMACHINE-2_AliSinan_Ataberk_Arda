@@ -58,6 +58,39 @@ namespace Nuka_Cola
 
         }
 
+        public String IcedColaSelection()
+        {
+            String descriptionText = "";
+            Console.WriteLine("Do you have ice? Y/N");
+            var readLine = Console.ReadLine();
+            if(readLine != null)
+            {
+                var yesOrNo = readLine.ToString();
+
+                if (yesOrNo == "y" || yesOrNo == "yes" || yesOrNo == "Y")
+                {
+                    descriptionText = GiveIcedNuka(true);
+                }
+                else
+                {
+                    descriptionText = GiveIcedNuka(false);
+                }
+            }
+            return descriptionText;
+        }
+
+        public String GiveIcedNuka(bool selection)
+        {
+            if(selection == true)
+            {
+                return "Your brain will freeze...";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
 
         //Check for discount coupon and make discount before charge
         public float Discount(float actualPrice)
@@ -69,7 +102,7 @@ namespace Nuka_Cola
             {
                 var yesOrNo = readLine.ToString();
 
-                if (yesOrNo == "y" || yesOrNo == "yes")
+                if (yesOrNo == "y" || yesOrNo == "yes" || yesOrNo == "Y")
                 {
                     newPrice = CalculateDiscount(actualPrice);
                 }
@@ -127,7 +160,7 @@ namespace Nuka_Cola
             // Add coin exit statement
             while (isSelected)
             {  
-                if (exit == "y" || exit == "Y" || exit == null)
+                if (exit == "y" || exit == "Y" || exit == "yes" || exit == null)
                 {
                     isSelected = false;
                 }
@@ -150,12 +183,13 @@ namespace Nuka_Cola
         // Shows what user selected and change 
         public void Selection(int selection)
         {
-            
+            String icedColaText = null;
             switch (selection)
             {
                 case 1:
+                    icedColaText = IcedColaSelection();
                     icenuka.setPrice((int)Discount(icenuka.getPrice())); //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! Your brain will freeze..." + icenuka.getName());
+                    Console.WriteLine("Great selection! Don'share you Nuka with a friend"+ icedColaText + icenuka.getName());
                     if (totalCoin < icenuka.getPrice())
                     {
                         Console.WriteLine("But you need put more coin!"); //notify user
@@ -168,8 +202,9 @@ namespace Nuka_Cola
                     }
                     break;
                 case 2:
+                    icedColaText = IcedColaSelection();
                     quantumnuka.setPrice((int)Discount(quantumnuka.getPrice()));  //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! You will fly..." + quantumnuka.getName());
+                    Console.WriteLine("Great selection! You will fly..."+ icedColaText + quantumnuka.getName());
                     if (totalCoin < quantumnuka.getPrice())
                     {
                         Console.WriteLine("But you need put more coin!");
@@ -182,8 +217,9 @@ namespace Nuka_Cola
                     }
                     break;
                 case 3:
+                    icedColaText = IcedColaSelection();
                     cartcurt.setPrice((int)Discount(cartcurt.getPrice()));  //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! You will like it." + cartcurt.getName());
+                    Console.WriteLine("Great selection! You will like it."+ icedColaText + cartcurt.getName());
                     if (totalCoin < cartcurt.getPrice())
                     {
                         Console.WriteLine("But you need put more coin!");
