@@ -97,11 +97,10 @@ namespace Nuka_Cola.Tests
             Assert.IsTrue(VendingMachine.IsNumeric("44"));
         }
 
-        //This test must be return false
         [TestMethod()]
         public void IsNumericTest2()
         {
-            Assert.IsTrue(VendingMachine.IsNumeric("Sinan"));
+            Assert.IsFalse(VendingMachine.IsNumeric("Sinan"));
         }
 
     }
