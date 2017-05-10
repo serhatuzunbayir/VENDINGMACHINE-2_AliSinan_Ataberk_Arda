@@ -91,17 +91,18 @@ namespace Nuka_Cola.Tests
             Assert.AreEqual(expected, actual);
         }
 
-        /*[TestMethod()]
+        [TestMethod()]
         public void IsNumericTest()
         {
             Assert.IsTrue(VendingMachine.IsNumeric("44"));
         }
 
+        //This test must be return false
         [TestMethod()]
         public void IsNumericTest2()
         {
             Assert.IsTrue(VendingMachine.IsNumeric("Sinan"));
-        }*/
+        }
 
     }
 }
