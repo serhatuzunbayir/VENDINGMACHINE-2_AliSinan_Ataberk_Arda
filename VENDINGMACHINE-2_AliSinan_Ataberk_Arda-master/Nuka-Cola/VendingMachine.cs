@@ -14,7 +14,7 @@ namespace Nuka_Cola
         public Boolean instanceVendingMachine = true;
         private int totalCoin;
 
-        // Creates cola objects
+        // Create cola objects
         NukaCola icenuka = new IceNuka();
         NukaCola quantumnuka = new QuantumNuka();
         NukaCola cartcurt = new Cartcurt();
@@ -100,7 +100,7 @@ namespace Nuka_Cola
             {
                 if(money == -1)
                 {
-                    Console.WriteLine("Put money to the machine..");
+                    Console.WriteLine("Put coin to the machine..");
                     coin = Convert.ToInt32(Console.ReadLine());             
                 }
                 else
@@ -114,16 +114,17 @@ namespace Nuka_Cola
                 }
                 else
                 {
-                    Console.WriteLine("Error: Invalid money.");
+                    Console.WriteLine("Error: Invalid or fake money.");
                 }
 
-                Console.WriteLine("Balance: " + this.getTotalCoin());
+                Console.WriteLine("Balance: " + getTotalCoin());
                 Console.WriteLine("To select a Nuka Cola enter Y or Add money");
                 exit = Console.ReadLine();
             }
 
             putCoinTheMachine(-1);
 
+            // Add coin exit statement
             while (isSelected)
             {  
                 if (exit == "y" || exit == "Y" || exit == null)
@@ -154,11 +155,11 @@ namespace Nuka_Cola
             {
                 case 1:
                     icenuka.setPrice((int)Discount(icenuka.getPrice())); //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! " + icenuka.getName());
+                    Console.WriteLine("Great selection! Your brain will freeze..." + icenuka.getName());
                     if (totalCoin < icenuka.getPrice())
                     {
-                        Console.WriteLine("But you need more money!");
-                        SelectionScreen();
+                        Console.WriteLine("But you need put more coin!"); //notify user
+                        SelectionScreen(); // show UI again
                     }
                     else
                     {
@@ -168,10 +169,10 @@ namespace Nuka_Cola
                     break;
                 case 2:
                     quantumnuka.setPrice((int)Discount(quantumnuka.getPrice()));  //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! " + quantumnuka.getName());
+                    Console.WriteLine("Great selection! You will fly..." + quantumnuka.getName());
                     if (totalCoin < quantumnuka.getPrice())
                     {
-                        Console.WriteLine("But you need more money!");
+                        Console.WriteLine("But you need put more coin!");
                         SelectionScreen();
                     }
                     else
@@ -182,10 +183,10 @@ namespace Nuka_Cola
                     break;
                 case 3:
                     cartcurt.setPrice((int)Discount(cartcurt.getPrice()));  //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! " + cartcurt.getName());
+                    Console.WriteLine("Great selection! You will like it." + cartcurt.getName());
                     if (totalCoin < cartcurt.getPrice())
                     {
-                        Console.WriteLine("But you need more money!");
+                        Console.WriteLine("But you need put more coin!");
                         SelectionScreen();
                     }
                     else

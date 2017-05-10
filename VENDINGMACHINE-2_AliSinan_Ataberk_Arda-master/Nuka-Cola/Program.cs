@@ -15,22 +15,26 @@ namespace Nuka_Cola
             var nukaVendingMachine = new VendingMachine();
 
             // Gives info to user at start
-            Console.WriteLine("------------------------------------------------------");
-            Console.WriteLine("---Welcome to Nuka-Cola Corparation Vending Machine---");
-            Console.WriteLine("------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("--------Welcome to Nuka-Cola Corparation Vending Machine-------");
+            Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("");
-            Console.WriteLine("1 -> Ice Cold Nuka Cola   (Price:200)");           
-            Console.WriteLine("2 -> Quantum Nuka Cola    (Price:300)");           
-            Console.WriteLine("3 -> Cart Curt Nuka Cola  (Price:50)");
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("---------         1 -> Ice Cold Nuka Cola  (200)      ---------");
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("---------         2 -> Quantum Nuka Cola  (300)      ----------");
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("---------         3 -> Cart Curt Nuka Cola  (50)      ---------");
+            Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("");
-            Console.WriteLine("------------------------------------------------------");
+
 
             // Calls selection screen
             nukaVendingMachine.SelectionScreen();
             // Calls display drink selection menu
             nukaVendingMachine.DisplayDrinkSelectionMenu();
 
-            //Stop
+            //Stop program
             Console.WriteLine("Press a key to Exit.");
             Console.ReadLine();
         }

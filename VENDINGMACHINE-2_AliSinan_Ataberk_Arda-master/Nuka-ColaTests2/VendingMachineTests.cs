@@ -10,7 +10,8 @@ namespace Nuka_Cola.Tests
 {
     [TestClass()]
     public class VendingMachineTests
-    {
+    {   
+        //Test vending machine constructor
         [TestMethod()]
         public void VendingMachineTestCase()
         {
@@ -18,6 +19,7 @@ namespace Nuka_Cola.Tests
             Assert.IsInstanceOfType(vendingMachine, typeof(VendingMachine));
         }
 
+        //Test balance at start. It must start at 0.
         [TestMethod()]
         public void getTotalCoinTest()
         {
@@ -25,6 +27,7 @@ namespace Nuka_Cola.Tests
             Assert.AreEqual(0, vendingMachine.getTotalCoin());
         }
 
+        //Test adding 50 coin
         [TestMethod()]
         public void getTotalCoinTest2()
         {
@@ -33,7 +36,7 @@ namespace Nuka_Cola.Tests
             Assert.AreEqual(50, vendingMachine.getTotalCoin());
         }        
 
-        // Test for get balance
+        // Test adding 100 coin
         [TestMethod()]
         public void getTotalCoinTest3()
         {
@@ -44,13 +47,13 @@ namespace Nuka_Cola.Tests
             Assert.AreEqual(expected, actual);
         }
 
-        // Test for adding coins to balance
+        // Test for adding 25 coin
         [TestMethod()]
         public void addCoinTest()
         {
             VendingMachine a = new VendingMachine();
-            int expected = 20;
-            a.addCoin(20);
+            int expected = 25;
+            a.addCoin(25);
             int actual = a.getTotalCoin();
             Assert.AreEqual(expected, actual);
         }
