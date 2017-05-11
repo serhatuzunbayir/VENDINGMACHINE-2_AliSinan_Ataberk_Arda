@@ -114,8 +114,9 @@ namespace Nuka_Cola.Tests
             Assert.IsFalse(VendingMachine.IsNumeric("Coban"));
         }
 
+        //GiveIcedNuka return string test
         [TestMethod()]
-        public void GiveIcedNukaTest()
+        public void NukaColaWithoutIceTest()
         {
             VendingMachine a = new VendingMachine();
             String expected = "";
@@ -123,8 +124,9 @@ namespace Nuka_Cola.Tests
 
         }
 
+        //GiveIcedNuka return string test
         [TestMethod()]
-        public void GiveIcedNukaTest2()
+        public void NukaColaWithIceTest()
         {
             VendingMachine a = new VendingMachine();
             String expected = "Your brain will freeze...";
