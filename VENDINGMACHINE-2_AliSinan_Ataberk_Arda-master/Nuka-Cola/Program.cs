@@ -30,7 +30,6 @@ namespace Nuka_Cola
             Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("");
 
-
             // Calls selection screen
             nukaVendingMachine.SelectionScreen();
             // Calls display drink selection menu
