@@ -100,6 +100,16 @@ namespace Nuka_Cola.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod()]
+        public void MakeDiscountToRedNukaCola()
+        {
+            VendingMachine a = new VendingMachine();
+            NukaCola rednuka = new RedNukaCola();
+            int expected = 375;
+            int actual = (int)a.CalculateDiscount(rednuka.getPrice()); //%25 discount to 500
+            Assert.AreEqual(expected, actual);
+        }
+
         //Test for IsNumeric function
         [TestMethod()]
         public void IsNumericTest()

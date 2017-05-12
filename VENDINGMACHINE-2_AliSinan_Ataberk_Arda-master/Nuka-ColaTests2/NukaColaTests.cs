@@ -56,5 +56,20 @@ namespace Nuka_Cola.Tests
             Assert.IsInstanceOfType(cartcurtNukaCola, typeof(NukaCola));
         }
 
+        [TestMethod()]
+        public void RedNukaTestCase()
+        {
+            NukaCola rednuka = new RedNukaCola();
+            Assert.AreEqual(500, rednuka.getPrice());
+            Assert.AreEqual("Red Nuka Cola", rednuka.getName());
+        }
+
+        [TestMethod()]
+        public void RedNukaTestCase2()
+        {
+            NukaCola rednuka = new RedNukaCola();
+            Assert.IsInstanceOfType(rednuka, typeof(NukaCola));
+        }
+
     }
 }

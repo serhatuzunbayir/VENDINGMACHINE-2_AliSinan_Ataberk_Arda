@@ -58,6 +58,15 @@ namespace Nuka_Cola
         }
     }
 
+    public class RedNukaCola : NukaCola
+    {
+        public RedNukaCola()
+        {
+            this.setName("Red Nuka Cola");
+            this.setPrice(500);
+        }
+    }
+
     // Sub-Class for cola object and sets name and price
     public class Cartcurt : NukaCola
     {

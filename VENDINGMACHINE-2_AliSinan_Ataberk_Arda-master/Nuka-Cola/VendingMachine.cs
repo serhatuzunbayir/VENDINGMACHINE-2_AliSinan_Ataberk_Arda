@@ -18,6 +18,7 @@ namespace Nuka_Cola
         NukaCola icenuka = new IceNuka();
         NukaCola quantumnuka = new QuantumNuka();
         NukaCola cartcurt = new Cartcurt();
+        NukaCola rednuka = new RedNukaCola();
 
 
         // Get balance
@@ -39,16 +40,18 @@ namespace Nuka_Cola
             int selection;
 
             Console.WriteLine("---------------------------------------------------------------");
-            Console.WriteLine("---------         1 -> Ice Cold Nuka Cola  (200)      ---------");
+            Console.WriteLine("---------         1 -> Ice Cold Nuka Cola   (200)     ---------");
             Console.WriteLine("---------------------------------------------------------------");
-            Console.WriteLine("---------         2 -> Quantum Nuka Cola  (300)      ----------");
+            Console.WriteLine("---------         2 -> Quantum Nuka Cola    (300)    ----------");
             Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("---------         3 -> Cart Curt Nuka Cola  (50)      ---------");
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("---------         4 -> Red Nuka Cola        (500)     ---------");
             Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine();
             Console.WriteLine("Please select a drink: ");
             selection = Convert.ToInt32(Console.ReadLine());
-            if (selection > 3)
+            if (selection > 4)
             {
                 Console.WriteLine("Error invalid selection, please select again");
                 this.DisplayDrinkSelectionMenu();
@@ -228,6 +231,21 @@ namespace Nuka_Cola
                     else
                     {
                         totalCoin -= cartcurt.getPrice();
+                        Console.WriteLine("Change: " + totalCoin);
+                    }
+                    break;
+                case 4:
+                    icedColaText = IcedColaSelection();
+                    rednuka.setPrice((int)Discount(rednuka.getPrice())); //Ask for discount coupon and make discount
+                    Console.WriteLine("Great selection! Don'share you Nuka with a friend" + icedColaText + rednuka.getName());
+                    if (totalCoin < rednuka.getPrice())
+                    {
+                        Console.WriteLine("But you need put more coin!"); //notify user
+                        SelectionScreen(); // show UI again
+                    }
+                    else
+                    {
+                        totalCoin -= rednuka.getPrice();
                         Console.WriteLine("Change: " + totalCoin);
                     }
                     break;

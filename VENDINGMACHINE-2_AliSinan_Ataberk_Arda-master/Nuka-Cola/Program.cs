@@ -20,11 +20,13 @@ namespace Nuka_Cola
             Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("");
             Console.WriteLine("---------------------------------------------------------------");
-            Console.WriteLine("---------         1 -> Ice Cold Nuka Cola  (200)      ---------");
+            Console.WriteLine("---------         1 -> Ice Cold Nuka Cola   (200)     ---------");
             Console.WriteLine("---------------------------------------------------------------");
-            Console.WriteLine("---------         2 -> Quantum Nuka Cola  (300)      ----------");
+            Console.WriteLine("---------         2 -> Quantum Nuka Cola    (300)    ----------");
             Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("---------         3 -> Cart Curt Nuka Cola  (50)      ---------");
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("---------         4 -> Red Nuka Cola        (500)     ---------");
             Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("");
 
