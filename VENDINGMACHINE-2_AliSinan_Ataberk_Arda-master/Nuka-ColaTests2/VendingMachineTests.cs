@@ -139,7 +139,7 @@ namespace Nuka_Cola.Tests
         public void NukaColaWithIceTest()
         {
             VendingMachine a = new VendingMachine();
-            String expected = "Your brain will freeze...";
+            String expected = "Watch out for the ice. Your brain will freeze...";
             Assert.AreEqual(expected, a.GiveIcedNuka(true));
 
         }
