@@ -64,7 +64,7 @@ namespace Nuka_Cola
         public String IcedColaSelection()
         {
             String descriptionText = "";
-            Console.WriteLine("Do you have ice? Y/N");
+            Console.WriteLine("Do you want ice? Y/N");
             var readLine = Console.ReadLine();
             if(readLine != null)
             {
@@ -86,7 +86,7 @@ namespace Nuka_Cola
         {
             if(selection == true)
             {
-                return "Your brain will freeze...";
+                return "Watch out for the ice. Your brain will freeze...";
             }
             else
             {
@@ -189,10 +189,12 @@ namespace Nuka_Cola
             String icedColaText = null;
             switch (selection)
             {
-                case 1:
+                case 1: //ice cold nuka cola
                     icedColaText = IcedColaSelection();
                     icenuka.setPrice((int)Discount(icenuka.getPrice())); //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! Don'share you Nuka with a friend"+ icedColaText + icenuka.getName());
+                    Console.WriteLine("Great selection!"  + icedColaText );
+                    Console.WriteLine("NOTE: Do not share " + icenuka.getName() + " with your friends. Capitalism requires this.");
+                    Console.WriteLine("");
                     if (totalCoin < icenuka.getPrice())
                     {
                         Console.WriteLine("But you need put more coin!"); //notify user
@@ -204,10 +206,12 @@ namespace Nuka_Cola
                         Console.WriteLine("Change: " + totalCoin);
                     }
                     break;
-                case 2:
+                case 2: //quantum nuka cola
                     icedColaText = IcedColaSelection();
                     quantumnuka.setPrice((int)Discount(quantumnuka.getPrice()));  //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! You will fly..."+ icedColaText + quantumnuka.getName());
+                    Console.WriteLine("Great selection! You will fly... "+ icedColaText);
+                    Console.WriteLine("NOTE: Do not share " + quantumnuka.getName() + " with your friends. Capitalism requires this.");
+                    Console.WriteLine("");
                     if (totalCoin < quantumnuka.getPrice())
                     {
                         Console.WriteLine("But you need put more coin!");
@@ -219,10 +223,12 @@ namespace Nuka_Cola
                         Console.WriteLine("Change: " + totalCoin);
                     }
                     break;
-                case 3:
+                case 3: // cart curt nuka cola
                     icedColaText = IcedColaSelection();
                     cartcurt.setPrice((int)Discount(cartcurt.getPrice()));  //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! You will like it."+ icedColaText + cartcurt.getName());
+                    Console.WriteLine("Great selection! You will like it. "+ icedColaText);
+                    Console.WriteLine("NOTE: Do not share " + cartcurt.getName() + " with your friends. Capitalism requires this.");
+                    Console.WriteLine("");
                     if (totalCoin < cartcurt.getPrice())
                     {
                         Console.WriteLine("But you need put more coin!");
@@ -234,10 +240,12 @@ namespace Nuka_Cola
                         Console.WriteLine("Change: " + totalCoin);
                     }
                     break;
-                case 4:
+                case 4: //red nuka cola
                     icedColaText = IcedColaSelection();
                     rednuka.setPrice((int)Discount(rednuka.getPrice())); //Ask for discount coupon and make discount
-                    Console.WriteLine("Great selection! Don'share you Nuka with a friend" + icedColaText + rednuka.getName());
+                    Console.WriteLine("Great selection! Your skin gonna turn red. " + icedColaText);
+                    Console.WriteLine("NOTE: Do not share " + rednuka.getName() + " with your friends. Capitalism requires this.");
+                    Console.WriteLine("");
                     if (totalCoin < rednuka.getPrice())
                     {
                         Console.WriteLine("But you need put more coin!"); //notify user

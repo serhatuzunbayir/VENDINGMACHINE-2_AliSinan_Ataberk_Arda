@@ -1,0 +1,9 @@
+D:\GithubRepos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Release\Nuka-ColaTests2.dll
+D:\GithubRepos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Release\Nuka-ColaTests2.pdb
+D:\GithubRepos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\GithubRepos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Release\Nuka-Cola.exe
+D:\GithubRepos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Release\Nuka-Cola.pdb
+D:\GithubRepos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\bin\Release\Nuka-Cola.exe.config
+D:\GithubRepos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\obj\Release\Nuka-ColaTests.csprojResolveAssemblyReference.cache
+D:\GithubRepos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\obj\Release\Nuka-ColaTests2.dll
+D:\GithubRepos\VENDINGMACHINE-2_AliSinan_Ataberk_Arda\VENDINGMACHINE-2_AliSinan_Ataberk_Arda-master\Nuka-ColaTests2\obj\Release\Nuka-ColaTests2.pdb
